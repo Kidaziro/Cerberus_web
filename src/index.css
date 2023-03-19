@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black-gradient: linear-gradient(144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%);
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  --primary: #111827;
+  --secondary: #fff;
+}
+
+
+
+* {
+  scroll-behavior: smooth;
+}
+
+.text-gradient {
+  background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,
+      #def9fa 0.89%,
+      #bef3f5 17.23%,
+      #9dedf0 42.04%,
+      #7de7eb 55.12%,
+      #5ce1e6 71.54%,
+      #088888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(157.81deg,
+      #def9fa -43.27%,
+      #bef3f5 -21.24%,
+      #9dedf0 12.19%,
+      #7de7eb 29.82%,
+      #5ce1e6 51.94%,
+      #088888 90.29%);
+}
+
+.bluer-gradient {
+  background: linear-gradient(109.75deg, rgba(255, 255, 255, 0.4) -15.92%, rgba(255, 255, 255, 0.3) -15.91%, rgba(255, 255, 255, 0.1) 97.51%);
+  backdrop-filter: blur(5px);
+}
+
+.bluer-gradient-2 {
+  background: linear-gradient(90deg, rgba(0, 125, 105, 0.8) 0%, rgba(8, 225, 190, 0.6) 100%);
+  /* border-radius: 15px; */
+}
+
+.line {
+  border: 26px solid #007D69;
+  filter: blur(50px);
+}
+
+.line-1 {
+  border: 9px solid #007D69;
+  filter: blur(7.5px);
+}
+
+
+.bg-discount-gradient {
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+
+.feedback-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+.feedback-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+}
+
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
+}
+
+
+@font-face {
+  font-family: 'Doctor';
+  src: url('../src/fonts/doctor_glitch/DoctorGlitch.otf')
+}
+
+@font-face {
+  font-family: 'Hacker';
+  src: url('../src/fonts/plan_de_la_maison/PlanDeLaMaison.ttf')
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateY(-20px);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+
+.animate-bounce01 {
+  animation: bounce 9.03s infinite;
+}
+
+.animate-bounce02 {
+  animation: bounce 9.02s infinite;
+
+}
+
+.animate-bounce03 {
+  animation: bounce 9.01s infinite;
+
+}
+
+.overlay {
+  /* background-color: black; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh ;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+
+.btn {
+  background: linear-gradient(90deg, rgba(0, 125, 105, 0.8) 0%, rgba(8, 225, 190, 0.6) 100%);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+  border-radius: 0px;
+}
+
+*::-webkit-scrollbar-thumb {
+  /* background-color: var(--secondary); */
+  background: linear-gradient(109.75deg, rgba(255, 255, 255, 0.4) -15.92%, rgba(255, 255, 255, 0.3) -15.91%, rgba(255, 255, 255, 0.1) 97.51%);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  /* border: 0px solid var(--primary); */
+}
+
+.saturn {
+
+  -webkit-animation: myOrbit 1s linear infinite;
+  /* Chrome, Safari 5 */
+
+  -moz-animation: myOrbit 1s linear infinite;
+  /* Firefox 5-15 */
+
+  -o-animation: myOrbit 1s linear infinite;
+  /* Opera 12+ */
+
+  animation: myOrbit 7s linear infinite;
+  /* Chrome, Firefox 16+, 
+                                                    IE 10+, Safari 5 */
+  transition: width 1s ease-in-out;
+
+}
+
+.download{
+  background: linear-gradient(90deg, rgba(0, 125, 105, 0.4) 0%, rgba(8, 225, 190, 0.3) 100%);
+  opacity: 0.9;
+  border-radius: 20px;
+}
