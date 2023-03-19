@@ -8,7 +8,7 @@ export const Button =()=> {
         <div className="border-[5px] rounded-full lg:w-[220px] lg:h-[220px] w-[150px] h-[150px] border-[#008C75] z-[2] ">
 
 
-            <a href="#Download" >
+            <a href="#download" >
                 <div className="w-[100%] h-[100%]
          bluer-gradient rounded-full flex items-center justify-center
          flex-col ">
